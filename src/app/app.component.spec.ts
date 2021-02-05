@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'mock-conditions-backend'`, () => {
+  it(`should have as title 'conditional-ui-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('mock-conditions-backend');
+    expect(app.title).toEqual('conditional-ui-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('mock-conditions-backend app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('conditional-ui-app app is running!');
   });
 });
